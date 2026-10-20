@@ -1,0 +1,526 @@
+{
+  "Categories": [
+    {
+      "category_id": "CAT01",
+      "category_name_th": "ตัดผมชาย",
+      "category_name_en": "Haircut",
+      "icon_file": "ic_haircut.svg"
+    },
+    {
+      "category_id": "CAT02",
+      "category_name_th": "เซตทรงและดัด",
+      "category_name_en": "Styling",
+      "icon_file": "ic_styling.svg"
+    },
+    {
+      "category_id": "CAT03",
+      "category_name_th": "ทำสีผม",
+      "category_name_en": "Color",
+      "icon_file": "ic_color.svg"
+    },
+    {
+      "category_id": "CAT04",
+      "category_name_th": "โกนและตกแต่งหนวด",
+      "category_name_en": "Beard",
+      "icon_file": "ic_beard.svg"
+    },
+    {
+      "category_id": "CAT05",
+      "category_name_th": "ทรีทเม้นท์และสปา",
+      "category_name_en": "Treatment",
+      "icon_file": "ic_treatment.svg"
+    }
+  ],
+  "Services": [
+    {
+      "service_id": "SVC001",
+      "service_name": "ตัดผมชายทรง Fade + เซตทรง",
+      "category_id": "CAT01",
+      "price": 120,
+      "duration_min": 45,
+      "description": "ตัดผมชายสไตล์ Fade เล็มแต่งทรงพร้อมเซตด้วยโพเมด",
+      "image_thumb_url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1"
+    },
+    {
+      "service_id": "SVC002",
+      "service_name": "ตัดผมชายทรง Two Block",
+      "category_id": "CAT01",
+      "price": 150,
+      "duration_min": 45,
+      "description": "ตัดผมสไตล์เกาหลี สระ เซตทรงธรรมชาติ",
+      "image_thumb_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c"
+    },
+    {
+      "service_id": "SVC003",
+      "service_name": "ตัดผมเด็ก (อายุไม่เกิน 10 ขวบ)",
+      "category_id": "CAT01",
+      "price": 100,
+      "duration_min": 30,
+      "description": "ตัดผมเด็กอย่างประณีตและใจเย็น",
+      "image_thumb_url": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a"
+    },
+    {
+      "service_id": "SVC004",
+      "service_name": "ตัดผมชายทรง Vintage Undercut",
+      "category_id": "CAT01",
+      "price": 350,
+      "duration_min": 45,
+      "description": "ตัดผมวินเทจไถข้างขึ้นสูง พร้อมไดร์เซตทรง",
+      "image_thumb_url": "https://images.unsplash.com/photo-1517832606299-7ae9b720a186"
+    },
+    {
+      "service_id": "SVC005",
+      "service_name": "ตัดผมชายทรง Crop Cut",
+      "category_id": "CAT01",
+      "price": 300,
+      "duration_min": 40,
+      "description": "สไตล์สั้นเต๋าดำเนินการด้วยความละเอียด",
+      "image_thumb_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb"
+    },
+    {
+      "service_id": "SVC006",
+      "service_name": "ตัดผมวินเทจ + แกะลาย (Hair Tattoo)",
+      "category_id": "CAT01",
+      "price": 500,
+      "duration_min": 60,
+      "description": "ตัดผมพร้อมแกะลายเส้นข้างศีรษะ",
+      "image_thumb_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
+    },
+    {
+      "service_id": "SVC007",
+      "service_name": "สระ-ไดร์-เซตทรงผมชาย",
+      "category_id": "CAT02",
+      "price": 150,
+      "duration_min": 30,
+      "description": "สระผมทำความสะอาดหนังศีรษะ นวดผ่อนคลาย เซตทรง",
+      "image_thumb_url": "https://images.unsplash.com/photo-1519699047748-de8e457a634e"
+    },
+    {
+      "service_id": "SVC008",
+      "service_name": "ดัดวอลลุ่มเกาหลี (Down Perm)",
+      "category_id": "CAT02",
+      "price": 800,
+      "duration_min": 60,
+      "description": "ดัดกดผมด้านข้างให้เรียบแนบศีรษะ สไตล์เกาหลี",
+      "image_thumb_url": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70"
+    },
+    {
+      "service_id": "SVC009",
+      "service_name": "ดัดผมดัดลอนดัดวอลลุ่มชาย (Cold Perm)",
+      "category_id": "CAT02",
+      "price": 1200,
+      "duration_min": 90,
+      "description": "เพิ่มวอลลุ่มให้ผมดูหนา มีมิติ เป็นธรรมชาติ",
+      "image_thumb_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    },
+    {
+      "service_id": "SVC010",
+      "service_name": "ดัดผมสไตล์ Afro / Texture Perm",
+      "category_id": "CAT02",
+      "price": 1500,
+      "duration_min": 120,
+      "description": "ดัดลอนแน่นสไตล์ฮิปฮอปหรือหยิกธรรมชาติ",
+      "image_thumb_url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+    },
+    {
+      "service_id": "SVC011",
+      "service_name": "ยืดผมตรงชาย (Hair Straightening)",
+      "category_id": "CAT02",
+      "price": 1000,
+      "duration_min": 90,
+      "description": "ยืดผมชี้ฟูให้ตรงเรียบธรรมชาติ",
+      "image_thumb_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    {
+      "service_id": "SVC012",
+      "service_name": "ทำสีผมปิดผมขาว (Gray Coverage)",
+      "category_id": "CAT03",
+      "price": 600,
+      "duration_min": 60,
+      "description": "ปิดผมขาวสนิทด้วยน้ำยาถนอมหนังศีรษะ",
+      "image_thumb_url": "https://images.unsplash.com/photo-1560066984-138dadb4c035"
+    },
+    {
+      "service_id": "SVC013",
+      "service_name": "ทำสีผมแฟชั่น (Fashion Color)",
+      "category_id": "CAT03",
+      "price": 1200,
+      "duration_min": 90,
+      "description": "ทำสีผมแฟชั่นโทนน้ำตาล/เทา/บลอนด์",
+      "image_thumb_url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e"
+    },
+    {
+      "service_id": "SVC014",
+      "service_name": "ฟอกสีผม (Bleaching - 1 รอบ)",
+      "category_id": "CAT03",
+      "price": 800,
+      "duration_min": 60,
+      "description": "ปรับความสว่างสีผมเดิม เตรียมทำสีแฟชั่น",
+      "image_thumb_url": "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388"
+    },
+    {
+      "service_id": "SVC015",
+      "service_name": "ทำสีผมไฮไลท์ (Hair Highlights)",
+      "category_id": "CAT03",
+      "price": 1000,
+      "duration_min": 75,
+      "description": "เพิ่มมิติให้ทรงผมด้วยเส้นไฮไลท์เฉพาะจุด",
+      "image_thumb_url": "https://images.unsplash.com/photo-1562322140-8baeececf3df"
+    },
+    {
+      "service_id": "SVC016",
+      "service_name": "ทำสีผมพาสเทล + ฟอกไม่จำกัดรอบ",
+      "category_id": "CAT03",
+      "price": 2500,
+      "duration_min": 180,
+      "description": "ทำสีพาสเทลสดใสพร้อมบำรุงโครงสร้างผม",
+      "image_thumb_url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e"
+    },
+    {
+      "service_id": "SVC017",
+      "service_name": "สปาหนังศีรษะ detox ลดขี้ไคลผม",
+      "category_id": "CAT05",
+      "price": 500,
+      "duration_min": 45,
+      "description": "ทำความสะอาดสิ่งตกค้างและลดความมันหนังศีรษะ",
+      "image_thumb_url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef"
+    },
+    {
+      "service_id": "SVC018",
+      "service_name": "ทรีทเม้นท์เคราตินฟื้นฟูผมเสีย",
+      "category_id": "CAT05",
+      "price": 800,
+      "duration_min": 60,
+      "description": "เติมเคราตินให้เส้นผมที่แห้งเสียจากการทำเคมี",
+      "image_thumb_url": "https://images.unsplash.com/photo-1512290900673-70020005375f"
+    },
+    {
+      "service_id": "SVC019",
+      "service_name": "สปาร้อนนวดผ่อนคลายศีรษะและไหล่",
+      "category_id": "CAT05",
+      "price": 400,
+      "duration_min": 40,
+      "description": "นวดกดจุดผ่อนคลายความเครียดด้วยน้ำมันอโรมา",
+      "image_thumb_url": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1"
+    },
+    {
+      "service_id": "SVC020",
+      "service_name": "ทรีทเม้นท์ลดการขาดหลุดร่วงของเส้นผม",
+      "category_id": "CAT05",
+      "price": 600,
+      "duration_min": 45,
+      "description": "บำรุงรากผมด้วยเซรั่มเข้มข้นและกระตุ้นการไหลเวียน",
+      "image_thumb_url": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e"
+    },
+    {
+      "service_id": "SVC021",
+      "service_name": "โกนหนวดเคราสไตล์คลาสสิก",
+      "category_id": "CAT04",
+      "price": 200,
+      "duration_min": 30,
+      "description": "โกนหนวดด้วยมีดโกนพับ ประคบร้อนและเย็น",
+      "image_thumb_url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1"
+    },
+    {
+      "service_id": "SVC022",
+      "service_name": "ตัดแต่งและจัดทรงหนวดเครา (Beard Trim)",
+      "category_id": "CAT04",
+      "price": 250,
+      "duration_min": 30,
+      "description": "เล็มแต่งทรงหนวดเคราให้เข้ากับรูปหน้า",
+      "image_thumb_url": "https://images.unsplash.com/photo-1621605815971-fbc98d665033"
+    },
+    {
+      "service_id": "SVC023",
+      "service_name": "แว็กซ์ขนกำจัดขนบริเวณใบหน้า/คิ้ว",
+      "category_id": "CAT04",
+      "price": 150,
+      "duration_min": 20,
+      "description": "จัดแต่งทรงคิ้วและกำจัดขนส่วนเกินบนใบหน้า",
+      "image_thumb_url": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1"
+    },
+    {
+      "service_id": "SVC024",
+      "service_name": "แพ็กเกจ Combo: ตัดผม + โกนหนวด",
+      "category_id": "CAT01",
+      "price": 500,
+      "duration_min": 70,
+      "description": "ตัดผมสระเซต พร้อมบริการโกนหนวดประคบร้อน",
+      "image_thumb_url": "https://images.unsplash.com/photo-1621605815971-fbc98d665033"
+    },
+    {
+      "service_id": "SVC025",
+      "service_name": "แพ็กเกจ Combo: ตัดผม + ดัด Down Perm",
+      "category_id": "CAT02",
+      "price": 1000,
+      "duration_min": 90,
+      "description": "ตัดผมทรงเกาหลีพร้อมกดผมด้านข้าง",
+      "image_thumb_url": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70"
+    },
+    {
+      "service_id": "SVC026",
+      "service_name": "แพ็กเกจ Combo: ตัดผม + ทำสีผมปิดผมขาว",
+      "category_id": "CAT03",
+      "price": 850,
+      "duration_min": 90,
+      "description": "ตัดแต่งทรงผมพร้อมเปลี่ยนสีผมปิดผมขาว",
+      "image_thumb_url": "https://images.unsplash.com/photo-1560066984-138dadb4c035"
+    },
+    {
+      "service_id": "SVC027",
+      "service_name": "แพ็กเกจ Combo: ตัดผม + สปา detox หนังศีรษะ",
+      "category_id": "CAT05",
+      "price": 750,
+      "duration_min": 80,
+      "description": "ตัดผมสระเซตพร้อมสปานวดล้างสารตกค้าง",
+      "image_thumb_url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef"
+    },
+    {
+      "service_id": "SVC028",
+      "service_name": "กันขอบแต่งทรงเคราด้วยเลเซอร์ความเย็น",
+      "category_id": "CAT04",
+      "price": 450,
+      "duration_min": 40,
+      "description": "จัดแต่งกรอบหน้าและเคราให้คมชัดยาวนาน",
+      "image_thumb_url": "https://images.unsplash.com/photo-1621605815971-fbc98d665033"
+    },
+    {
+      "service_id": "SVC029",
+      "service_name": "มาส์กหน้าบำรุงผิวสำหรับผู้ชาย",
+      "category_id": "CAT05",
+      "price": 300,
+      "duration_min": 30,
+      "description": "มาส์กโคลนดูดซับความมันและเติมความชุ่มชื้น",
+      "image_thumb_url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef"
+    },
+    {
+      "service_id": "SVC030",
+      "service_name": "บริการเซตทรงผมสำหรับเจ้าบ่าว/งานรับปริญญา",
+      "category_id": "CAT02",
+      "price": 600,
+      "duration_min": 45,
+      "description": "ออกแบบและเซตทรงผมเน้นความเนี้ยบเป๊ะตลอดวัน",
+      "image_thumb_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    }
+  ],
+  "Barbers": [
+    {
+      "barber_id": "BAR001",
+      "full_name": "สมชาย ใจดี",
+      "specialty": "Vintage Fade & Beard Design",
+      "experience_yrs": 8,
+      "rating": 4.9,
+      "image_avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    },
+    {
+      "barber_id": "BAR002",
+      "full_name": "กิตติศักดิ์ มั่นคง",
+      "specialty": "Korean Style & Perm Expert",
+      "experience_yrs": 5,
+      "rating": 4.8,
+      "image_avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    },
+    {
+      "barber_id": "BAR003",
+      "full_name": "อนันต์ สุขเสริฐ",
+      "specialty": "Hair Color Specialist",
+      "experience_yrs": 6,
+      "rating": 4.75,
+      "image_avatar_url": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce"
+    },
+    {
+      "barber_id": "BAR004",
+      "full_name": "ธีรภัทร์ วงศ์ใหญ่",
+      "specialty": "Classic Cut & Hot Towel Shave",
+      "experience_yrs": 10,
+      "rating": 4.95,
+      "image_avatar_url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+    },
+    {
+      "barber_id": "BAR005",
+      "full_name": "ภานุวัฒน์ ศรีสุข",
+      "specialty": "Modern Crop & Hair Tattoo",
+      "experience_yrs": 4,
+      "rating": 4.65,
+      "image_avatar_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
+    },
+    {
+      "barber_id": "BAR006",
+      "full_name": "ณัฐวุฒิ บุญมี",
+      "specialty": "Head Spa & Scalp Treatment",
+      "experience_yrs": 7,
+      "rating": 4.85,
+      "image_avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    }
+  ],
+  "Data_Asset_Sources": [
+    {
+      "asset_file": "Target Asset File",
+      "asset_category": "Category",
+      "source_platform": "Source Platform",
+      "source_url": "Direct Page URL / Reference",
+      "license_terms": "License Terms"
+    },
+    {
+      "asset_file": "svc_001_thumb.webp",
+      "asset_category": "Barber Service",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1503951914875-452162b0f3f1",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_002_thumb.webp",
+      "asset_category": "Barber Service",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1622286342621-4bd786c2447c",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_003_thumb.webp",
+      "asset_category": "Barber Service",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1599351431202-1e0f0137899a",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_004_thumb.webp",
+      "asset_category": "Barber Service",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1517832606299-7ae9b720a186",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_005_thumb.webp",
+      "asset_category": "Barber Service",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1534528741775-53994a69daeb",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_006_thumb.webp",
+      "asset_category": "Barber Service",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1519085360753-af0119f7cbe7",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_007_thumb.webp",
+      "asset_category": "Styling",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1519699047748-de8e457a634e",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_008_thumb.webp",
+      "asset_category": "Perm / Styling",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1585747860715-2ba37e788b70",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_012_thumb.webp",
+      "asset_category": "Hair Color",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1560066984-138dadb4c035",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_017_thumb.webp",
+      "asset_category": "Head Spa",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1540555700478-4be289fbecef",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "svc_022_thumb.webp",
+      "asset_category": "Beard Care",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1621605815971-fbc98d665033",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "barber_001_avatar.webp",
+      "asset_category": "Avatar Portrait",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1507003211169-0a1dd7228f2d",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "barber_002_avatar.webp",
+      "asset_category": "Avatar Portrait",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1500648767791-00dcc994a43e",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "barber_003_avatar.webp",
+      "asset_category": "Avatar Portrait",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1492562080023-ab3db95bfbce",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "barber_004_avatar.webp",
+      "asset_category": "Avatar Portrait",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1506794778202-cad84cf45f1d",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "barber_005_avatar.webp",
+      "asset_category": "Avatar Portrait",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1519085360753-af0119f7cbe7",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "barber_006_avatar.webp",
+      "asset_category": "Avatar Portrait",
+      "source_platform": "Unsplash",
+      "source_url": "https://unsplash.com/photos/1500648767791-00dcc994a43e",
+      "license_terms": "Unsplash Free License"
+    },
+    {
+      "asset_file": "ic_haircut.svg",
+      "asset_category": "UI Icon",
+      "source_platform": "SVG Repo / Flaticon",
+      "source_url": "https://www.svgrepo.com/svg/barber-shop",
+      "license_terms": "Free Commercial Use"
+    },
+    {
+      "asset_file": "ic_styling.svg",
+      "asset_category": "UI Icon",
+      "source_platform": "SVG Repo / Flaticon",
+      "source_url": "https://www.svgrepo.com/svg/hair-dryer",
+      "license_terms": "Free Commercial Use"
+    },
+    {
+      "asset_file": "ic_color.svg",
+      "asset_category": "UI Icon",
+      "source_platform": "SVG Repo / Flaticon",
+      "source_url": "https://www.svgrepo.com/svg/hair-dye",
+      "license_terms": "Free Commercial Use"
+    },
+    {
+      "asset_file": "ic_beard.svg",
+      "asset_category": "UI Icon",
+      "source_platform": "SVG Repo / Flaticon",
+      "source_url": "https://www.svgrepo.com/svg/beard-shave",
+      "license_terms": "Free Commercial Use"
+    },
+    {
+      "asset_file": "ic_treatment.svg",
+      "asset_category": "UI Icon",
+      "source_platform": "SVG Repo / Flaticon",
+      "source_url": "https://www.svgrepo.com/svg/head-spa",
+      "license_terms": "Free Commercial Use"
+    },
+    {
+      "asset_file": "Master_Dataset.xlsx",
+      "asset_category": "Field Survey",
+      "source_platform": "Phaya Thai Survey",
+      "source_url": "Survey from Phaya Thai Barber Shops (2026)",
+      "license_terms": "Original Student Research"
+    }
+  ]
+}

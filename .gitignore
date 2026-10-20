@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+functions/.env
+functions/.env.*
+!functions/.env.example
+*-debug.log*
+.firebase/
+
+.qa/
+
+emulator-backup/
+*-firebase-adminsdk-*.json
+service-account*.json
+docs/*.zip

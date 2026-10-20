@@ -1,0 +1,943 @@
+@font-face{font-family:Prompt;font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/prompt-thai-400-normal.woff2') format('woff2');unicode-range:U+0E00-0E7F,U+200C-200D,U+25CC;}
+@font-face{font-family:Prompt;font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/prompt-thai-600-normal.woff2') format('woff2');unicode-range:U+0E00-0E7F,U+200C-200D,U+25CC;}
+@font-face{font-family:Prompt;font-style:normal;font-weight:400;font-display:swap;src:url('/assets/fonts/prompt-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:Prompt;font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/prompt-latin-600-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/playfair-display-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/fonts/playfair-display-latin-600-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/fonts/playfair-display-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #f8f6f2;
+    color: #20201f;
+    font-family: Prompt, Arial, sans-serif;
+}
+button, input, select {
+    font: inherit;
+}
+button {
+    cursor: pointer;
+    border: 0;
+    background: none;
+    color: inherit;
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.wrap {
+    width: min(1180px,92%);
+    margin: auto;
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+======================================== */
+
+.header {
+    height: 76px;
+    background: #fff;
+    border-bottom: 1px solid #ece8e1;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+.brand img {
+    width: 38px;
+    height: 38px;
+}
+.brand b {
+    font-weight: 700;
+}
+.brand span {
+    font-weight: 400;
+}
+.nav nav {
+    display: flex;
+    gap: 6px;
+}
+.nav nav button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.nav nav button:hover, .nav nav .active {
+    background: #f1eee8;
+}
+.nav i {
+    font-style: normal;
+    background: #cda66b;
+    color: #fff;
+    border-radius: 99px;
+    padding: 1px 6px;
+    font-size: 11px;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.login {
+    font-size: 14px;
+}
+.primary {
+    background: #252525;
+    color: #fff;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .2s;
+}
+.primary:hover {
+    transform: translateY(-1px);
+    background: #111;
+}
+.primary.small {
+    padding: 10px 15px;
+}
+.ghost {
+    padding: 12px 20px;
+    border: 1px solid #d9d3c9;
+    border-radius: 10px;
+    margin-left: 8px;
+}
+.link {
+    font-weight: 600;
+}
+.avatar {
+    background: #f1eee8;
+    padding: 10px 14px;
+    border-radius: 10px;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    background: #ede8df;
+    min-height: 530px;
+}
+.heroInner {
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heroText {
+    max-width: 650px;
+}
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #a27b45;
+}
+.hero h1 {
+    font: 600 clamp(48px,6vw,76px)/1.04 'Playfair Display', Prompt, serif;
+    margin: 15px 0;
+}
+.hero h1 em {
+    font-style: normal;
+    color: #a77b42;
+}
+.hero p {
+    line-height: 1.9;
+    color: #666;
+    margin: 0 0 25px;
+}
+.heroCard {
+    width: 360px;
+    height: 390px;
+    border-radius: 24px;
+    background: #262522;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 60px #0002;
+}
+.heroCard strong {
+    font: 700 48px/1 'Playfair Display', Prompt, serif;
+    text-align: center;
+    z-index: 1;
+}
+.heroCard span {
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 18px;
+    z-index: 1;
+    color: #cdb994;
+}
+.scissors {
+    font-size: 100px;
+    position: absolute;
+    top: 55px;
+    opacity: .1;
+    transform: rotate(-20deg);
+}
+
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
+
+.section {
+    padding: 70px 0;
+}
+.sectionHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 28px;
+}
+.sectionHead h2, .pageTitle h1 {
+    font: 600 36px 'Playfair Display', Prompt, serif;
+    margin: 7px 0;
+}
+
+/* ========================================
+   CATEGORIES
+======================================== */
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 14px;
+}
+.cat {
+    background: #fff;
+    border: 1px solid #ece8e1;
+    border-radius: 16px;
+    padding: 25px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.cat:hover {
+    border-color: #c9b18e;
+    transform: translateY(-2px);
+}
+.cat img {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+}
+.cat span {
+    font-size: 11px;
+    color: #999;
+}
+
+/* ========================================
+   SERVICE CARDS
+======================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.serviceCard {
+    background: #fff;
+    border: 1px solid #ece8e1;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.photo {
+    height: 210px;
+    position: relative;
+    background: #ddd;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo span {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: #fffdd;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    background: #fff;
+}
+.cardBody {
+    padding: 18px;
+}
+.muted {
+    color: #a07d50;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.cardBody h3 {
+    font-size: 17px;
+    margin: 7px 0;
+}
+.cardBody p {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+    height: 42px;
+    overflow: hidden;
+}
+.cardBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 15px;
+}
+.cardBottom b {
+    font-size: 18px;
+}
+.cardBottom button {
+    min-height: 48px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* ========================================
+   CALL TO ACTION
+======================================== */
+
+.cta {
+    background: #272624;
+    color: #fff;
+    padding: 60px 0;
+}
+.cta .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cta h2 {
+    font: 600 34px 'Playfair Display', Prompt, serif;
+    margin: 8px 0;
+}
+.cta p {
+    color: #aaa;
+}
+.cta .primary {
+    background: #c59b62;
+}
+
+/* ========================================
+   PAGE LAYOUT
+======================================== */
+
+.page {
+    padding: 65px 0 90px;
+    min-height: 650px;
+}
+.pageTitle {
+    margin-bottom: 32px;
+}
+.pageTitle p {
+    color: #777;
+}
+.toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.search {
+    background: #fff;
+    border: 1px solid #ddd6cb;
+    border-radius: 10px;
+    flex: 1;
+    padding: 10px 14px;
+    display: flex;
+    gap: 8px;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: none;
+}
+.toolbar select, input {
+    background: #fff;
+    border: 1px solid #ddd6cb;
+    border-radius: 10px;
+    padding: 12px 14px;
+    outline: none;
+}
+.toolbar select {
+    min-width: 190px;
+}
+.back {
+    margin-bottom: 25px;
+    color: #777;
+}
+
+/* ========================================
+   SERVICE DETAIL
+======================================== */
+
+.detail {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #e9e3da;
+}
+.detailPhoto {
+    min-height: 520px;
+}
+.detailPhoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detailInfo {
+    padding: 55px;
+}
+.detailInfo h1 {
+    font: 600 42px 'Playfair Display', Prompt, serif;
+    margin: 10px 0 20px;
+}
+.detailInfo>p {
+    color: #777;
+    line-height: 1.9;
+}
+.facts {
+    display: flex;
+    gap: 45px;
+    margin: 30px 0;
+}
+.facts div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.facts small {
+    color: #999;
+}
+.facts b {
+    font-size: 20px;
+}
+.miniBarbers {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.miniBarbers div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #f5f2ec;
+    padding: 5px 10px 5px 5px;
+    border-radius: 99px;
+    font-size: 11px;
+}
+.miniBarbers img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.wide {
+    width: 100%;
+}
+
+/* ========================================
+   BARBER SECTION
+======================================== */
+
+.barberGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.barber {
+    background: #fff;
+    border: 1px solid #ece8e1;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.barber>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.barber>div {
+    padding: 20px;
+}
+.rating {
+    color: #a47a42;
+    font-size: 12px;
+}
+.barber h3 {
+    margin: 8px 0;
+}
+.barber p {
+    font-size: 12px;
+    color: #777;
+}
+.barber span {
+    font-size: 11px;
+    color: #999;
+}
+
+/* ========================================
+   BOOKING FORM
+======================================== */
+
+.bookingLayout {
+    display: grid;
+    grid-template-columns: 1.6fr .8fr;
+    gap: 20px;
+}
+.formCard, .summary {
+    background: #fff;
+    border: 1px solid #e8e2d9;
+    border-radius: 18px;
+    padding: 28px;
+}
+.formCard label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 16px 0 8px;
+}
+.selectedService {
+    display: flex;
+    gap: 12px;
+    background: #f5f2ec;
+    padding: 10px;
+    border-radius: 12px;
+}
+.selectedService img {
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.selectedService div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.selectedService span {
+    font-size: 11px;
+    color: #888;
+    margin-top: 5px;
+}
+.selectGrid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+}
+.selectGrid button {
+    border: 1px solid #ddd6cb;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+.selectGrid button.selected, .timeGrid button.selected {
+    border-color: #a77b42;
+    background: #f6efe5;
+}
+.selectGrid img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+.selectGrid span {
+    font-size: 10px;
+}
+.selectGrid small {
+    display: block;
+    margin: 5px 0 0 43px;
+    color: #a77b42;
+}
+.timeGrid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 8px;
+}
+.timeGrid button {
+    border: 1px solid #ddd6cb;
+    padding: 10px;
+    border-radius: 9px;
+}
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.summary {
+    height: max-content;
+    position: sticky;
+    top: 95px;
+}
+.summary h3 {
+    font: 600 25px 'Playfair Display', Prompt, serif;
+}
+.sumRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 12px;
+}
+.sumRow span {
+    color: #888;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 15px;
+}
+.total b {
+    font-size: 22px;
+}
+
+/* ========================================
+   MY BOOKINGS
+======================================== */
+
+.bookingCard {
+    background: #fff;
+    border: 1px solid #e8e2d9;
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    gap: 22px;
+    max-width: 800px;
+}
+.bookingCard>img {
+    width: 190px;
+    height: 160px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.bookingMain {
+    flex: 1;
+}
+.status {
+    display: inline-block;
+    background: #e8f4e8;
+    color: #4d8654;
+    border-radius: 99px;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.bookingMain h2 {
+    margin: 10px 0 5px;
+    font: 600 25px 'Playfair Display', Prompt, serif;
+}
+.bookingMain p {
+    color: #777;
+    font-size: 13px;
+}
+.bookingMeta {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: #777;
+    margin: 20px 0;
+}
+.danger {
+    color: #a74b43;
+    font-size: 12px;
+    border: 1px solid #e4c9c5;
+    padding: 8px 13px;
+    border-radius: 8px;
+}
+.center {
+    text-align: center;
+}
+.empty {
+    padding: 60px;
+    text-align: center;
+    color: #777;
+}
+.emptyIcon, .profileIcon {
+    font-size: 55px;
+}
+
+/* ========================================
+   LOGIN & AUTHENTICATION
+======================================== */
+
+.auth {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background: #ede8df;
+}
+.authCard {
+    background: #fff;
+    width: min(440px,92%);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px #0001;
+    text-align: left;
+}
+.authCard>img {
+    display: block;
+    width: 45px;
+    margin: 0 auto 20px;
+}
+.authCard .eyebrow {
+    display: block;
+    text-align: center;
+}
+.authCard h1 {
+    text-align: center;
+    font: 600 34px 'Playfair Display', Prompt, serif;
+    margin: 8px;
+}
+.authCard>p {
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+.authCard label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 13px 0 6px;
+}
+.authCard input {
+    width: 100%;
+}
+.authFoot {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 18px;
+}
+.authFoot button {
+    text-decoration: underline;
+}
+
+/* ========================================
+   DASHBOARD STATISTICS
+======================================== */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+.stats div {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.stats b {
+    font-size: 35px;
+}
+.stats span {
+    color: #888;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background: #242321;
+    color: #fff;
+    padding-top: 45px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.foot {
+    color: #fff;
+}
+.footer p {
+    color: #999;
+    font-size: 11px;
+}
+.footer>div>b {
+    display: block;
+    margin-bottom: 12px;
+}
+.footer>div>button:not(.brand) {
+    display: block;
+    color: #aaa;
+    font-size: 12px;
+    margin: 8px 0;
+}
+.copyright {
+    text-align: center;
+    border-top: 1px solid #3b3a37;
+    padding: 18px;
+    color: #777;
+    font-size: 10px;
+}
+.loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.spinner {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #ddd;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========================================
+   RESPONSIVE — TABLET
+======================================== */
+
+@media(max-width:850px) {
+    .nav nav {
+        display: none;
+    }
+    .heroCard {
+        display: none;
+    }
+    .hero {
+        min-height: auto;
+    }
+    .heroInner {
+        padding: 70px 0;
+    }
+    .categories {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .barberGrid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .detail {
+        grid-template-columns: 1fr;
+    }
+    .detailPhoto {
+        min-height: 330px;
+    }
+    .bookingLayout {
+        grid-template-columns: 1fr;
+    }
+    .summary {
+        position: static;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ========================================
+   RESPONSIVE — MOBILE
+======================================== */
+
+@media(max-width:560px) {
+    .actions .login {
+        display: none;
+    }
+    .categories, .cards, .barberGrid {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .sectionHead {
+        align-items: start;
+    }
+    .sectionHead h2 {
+        font-size: 27px;
+    }
+    .toolbar {
+        flex-direction: column;
+    }
+    .detailInfo {
+        padding: 30px;
+    }
+    .selectGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .two {
+        grid-template-columns: 1fr;
+    }
+    .bookingCard {
+        flex-direction: column;
+    }
+    .bookingCard>img {
+        width: 100%;
+        height: 200px;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+/* Application state and mobile navigation; existing theme retained. */
+.notice {background:#fff3df;color:#704a15;padding:14px 20px;border:1px solid #e4c99e;border-radius:10px;margin:16px auto;max-width:1180px;overflow-wrap:anywhere;}
+button:disabled {opacity:.5;cursor:not-allowed;transform:none;}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {outline:3px solid #a77b42;outline-offset:3px;}
+.mobileMenu {display:none;}
+.profileForm {max-width:600px;margin:auto;}
+.formCard input,.formCard textarea {max-width:100%;width:100%;}
+.formCard textarea {font:14px monospace;border:1px solid #ddd6cb;border-radius:10px;padding:12px;}
+.formCard {margin:20px 0;}
+.bookingCard {margin:18px 0;overflow-wrap:anywhere;}
+.rowActions {display:flex;flex-wrap:wrap;gap:12px;margin-top:15px;}
+.adminUser {display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding:15px 0;border-bottom:1px solid #eee;}
+.adminUser form {display:flex;flex-wrap:wrap;gap:8px;}
+.avatar {max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+@media(max-width:1100px){.nav{gap:10px;}.nav nav button{padding:8px;font-size:12px;}.brand{font-size:19px;}}
+@media(max-width:850px){.mobileMenu{display:block;font-size:26px;}.nav nav.isOpen{display:flex;position:absolute;top:76px;left:0;right:0;flex-direction:column;background:#fff;padding:15px;border-bottom:1px solid #ddd;box-shadow:0 8px 12px #0001;}.nav nav.isOpen button{text-align:left;padding:12px;}.actions .login{display:block;}.avatar{max-width:130px;}}
+@media(max-width:560px){.brand{font-size:16px;gap:5px;}.brand img{width:28px;height:28px;}.actions{gap:5px;}.actions .login{font-size:11px;}.primary.small{padding:8px;font-size:11px;}.avatar{max-width:95px;font-size:11px;}.timeGrid{grid-template-columns:repeat(3,1fr);}.empty{padding:35px 15px;}.stats{grid-template-columns:1fr;}.detailInfo h1{font-size:30px;}.cta .wrap{align-items:start;flex-direction:column;gap:15px;}.summary,.formCard{padding:18px;}.selectGrid button{overflow-wrap:anywhere;}.selectGrid img{display:block;margin:0 0 5px;}}
+.paymentMethods {border:1px solid #ddd6cb;border-radius:12px;padding:16px;margin:22px 0;}
+.paymentMethods legend {font-weight:600;}
+.paymentMethods label {display:flex;align-items:center;gap:10px;}
+.paymentMethods input {width:auto;}
+.paymentMethods p,.paymentQR p {font-size:13px;line-height:1.7;}
+.paymentQR {margin:18px 0;padding:18px;background:#f8f6f2;border-radius:12px;max-width:400px;}
+.paymentQR img {display:block;width:min(260px,100%);height:auto;margin:12px auto;}
+.paymentConfirm {padding:15px;background:#fff3df;border-radius:10px;}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="512" height="512">
+  <!-- วงกลมพื้นหลังสีส้ม -->
+  <circle cx="100" cy="100" r="90" fill="#FA9D1C" />
+
+  <!-- ตัวกรรไกรสีน้ำเงินเข้ม -->
+  <g fill="none" stroke="#0F1E2E" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ห่วงกรรไกรบนซ้าย -->
+    <circle cx="70" cy="70" r="16" />
+    <!-- ห่วงกรรไกรล่างซ้าย -->
+    <circle cx="70" cy="130" r="16" />
+    <!-- คมกรรไกรเส้นล่างไปบนขวา -->
+    <line x1="82" y1="118" x2="140" y2="60" />
+    <!-- คมกรรไกรเส้นบนไปล่างขวา -->
+    <line x1="82" y1="82" x2="140" y2="140" />
+  </g>
+</svg>

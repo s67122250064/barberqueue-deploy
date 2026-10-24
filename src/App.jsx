@@ -32,7 +32,7 @@ export default function App(){
  else if(base==='bookings'||base==='schedule')content=<BookingList session={session} staff={base==='schedule'} go={go}/>;
  else if(catalog.loading)content=<Loading/>;
  else if(catalog.error)content=<RemoteError error={catalog.error} retry={catalog.retry}/>;
- else if(base==='home')content=<Home canBook={canBook} data={{cats:data.categories,services:data.services,barbers:data.barbers}} go={go} setSelected={()=>{}}/>;
+ else if(base==='home')content=<><Home canBook={canBook} data={{cats:data.categories,services:data.services,barbers:data.barbers}} go={go} setSelected={()=>{}}/><section className="wrap page" aria-labelledby="satisfaction-title"><div className="formCard"><h2 id="satisfaction-title">ประเมินความพึงพอใจ</h2><p>ร่วมแสดงความคิดเห็นเกี่ยวกับเว็บไซต์ BarberQueue เพื่อช่วยให้เราปรับปรุงการใช้งานให้ดียิ่งขึ้น</p><a className="primary" href="https://forms.gle/oQS3fc9MSVvvFiydA" target="_blank" rel="noopener noreferrer" aria-label="ทำแบบประเมินความพึงพอใจ (เปิด Google Forms ในแท็บใหม่)" style={{display:'inline-flex',alignItems:'center',justifyContent:'center',textDecoration:'none',textAlign:'center',maxWidth:'100%',boxSizing:'border-box'}}>ทำแบบประเมินความพึงพอใจ</a></div></section></>;
  else if(base==='services'&&param)content=selected?<Detail canBook={canBook} service={selected} cats={data.categories} barbers={data.barbers} go={go} setSelected={()=>{}}/>:<Empty text="ไม่พบบริการนี้" go={go}/>;
  else if(base==='services')content=<Services data={data} go={go} query={query} setQuery={setQuery} cat={category||cat} setCat={v=>{setCat(v);if(category)go('services');}}/>;
  else if(base==='barbers')content=<Barbers barbers={data.barbers}/>;

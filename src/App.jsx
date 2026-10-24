@@ -79,6 +79,7 @@ function BookingList({session,staff,go}){
  {b.status==='cancelled'&&b.payment_status==='paid'&&<Notice>รายการนี้ยกเลิกแล้วและเคยรับชำระเงิน กรุณาติดต่อร้านเรื่องการคืนเงิน</Notice>}
  <div className="rowActions">
  <BookingActions booking={b} session={session} staff={staff} busy={!!busy} onStatus={value=>status(b,value)} onReceive={()=>receivePayment(b)}/>
+ {!staff&&b.status==='completed'&&b.user_id===session.user.uid&&<a className="primary" href="https://forms.gle/oQS3fc9MSVvvFiydA" target="_blank" rel="noopener noreferrer" aria-label="ประเมินความพึงพอใจ (เปิด Google Forms ในแท็บใหม่)" style={{display:'inline-flex',alignItems:'center',justifyContent:'center',textDecoration:'none',textAlign:'center',maxWidth:'100%',boxSizing:'border-box'}}>ประเมินความพึงพอใจ</a>}
 
  </div></div></article>)}
  </>}</main>;
